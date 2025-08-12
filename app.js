@@ -6,6 +6,8 @@
 // CONFIGURAR O BOTÃO PARA FAZER O SORTEIO
 // MOSTRAR O NOME DO AMIGO SORTEADO NA TELA
 
+
+
 h2();
 
 let listaDeAmigos = [];
@@ -16,16 +18,21 @@ let listaDeAmigos = [];
 function adicionarAmigo(){
     amigoAdicionado = document.getElementById("amigo").value;
     if (amigoAdicionado != "") {
+        if (listaDeAmigos.includes(amigoAdicionado)) {
+        alert("Esse amigo já está na lista.");
+        document.getElementById("amigo").value = "";
+        return;
+        }
         listaDeAmigos.push(amigoAdicionado);
         console.log(listaDeAmigos +","+ listaDeAmigos.length )
         amigosNaLista()
         amigoAdicionado = document.getElementById("amigo").value = "";
-        
-    
+        document.getElementById("resultado").innerHTML = "";
     } else {
         alert("Por favor, digite o nome do seu amigo.");
     }
 }
+
 
 function h2() {
     let titulo = document.querySelector("h2").innerHTML = "Digite o nome dos seus amigos um por vez"   ;
@@ -43,7 +50,7 @@ function amigosNaLista() {
 function sortearAmigo() {
     document.querySelector("buttom");
     if (listaDeAmigos.length > 0){
-        amigoSorteado = parseInt(Math.random() * listaDeAmigos.length) +1;
+        amigoSorteado = parseInt(Math.random() * listaDeAmigos.length);
         document.getElementById("resultado").innerHTML = ("O sorteado(a) foi " + listaDeAmigos[amigoSorteado] + "!");
         listaDeAmigos = []
         console.log(listaDeAmigos)
