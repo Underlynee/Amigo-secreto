@@ -16,7 +16,7 @@
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - ➕ Adição de nomes dos participantes  
 - 🔀 Sorteio automático dos pares  
@@ -30,5 +30,9 @@
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+
+- ## 👤 Autor
+
+Rennan Tavares
 
 
