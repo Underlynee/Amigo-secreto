@@ -11,7 +11,7 @@
 h2();
 
 let listaDeAmigos = [];
-    amigoSorteado = "";
+let amigoSorteado = 0;
 
 
 
@@ -29,7 +29,7 @@ function adicionarAmigo(){
         amigoAdicionado = document.getElementById("amigo").value = "";
         document.getElementById("resultado").innerHTML = "";
     } else {
-        alert("Por favor, digite o nome do seu amigo.");
+        alert("Por favor, digite um nome antes de adicionar.");
     }
 }
 
@@ -51,13 +51,14 @@ function sortearAmigo() {
     document.querySelector("buttom");
     if (listaDeAmigos.length > 0){
         amigoSorteado = parseInt(Math.random() * listaDeAmigos.length);
+        console.log(amigoSorteado);
         document.getElementById("resultado").innerHTML = ("O sorteado(a) foi " + listaDeAmigos[amigoSorteado] + "!");
         listaDeAmigos = []
         console.log(listaDeAmigos)
         document.getElementById("listaAmigos").innerHTML = "";
 
            } else {
-        alert("Por gentileza, adicione amigos antes de sortear.");
+        alert("Por gentileza, adicione os nomes dos amigos antes de sortear.");
 
        }
     
