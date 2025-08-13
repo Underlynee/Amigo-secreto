@@ -1,5 +1,5 @@
 
-<h1 align="center">🎁 Amigo Secreto</h1>
+<h1 align="center">Amigo Secreto</h1>
 
 <p align="center">
   Uma aplicação web simples para organizar e sortear <strong>Amigo Secreto</strong> direto no navegador.
@@ -30,6 +30,16 @@
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+
+## Passo a passo.
+
+- Abra o arquivo .HTML
+- Selecione a caixinha para escrever o nome dos participantes
+- Coloque quantas pessoas você quiser
+- Após isso, clique em "Sortear" abaixo e tente a sorte de quem ganhará!
+
+- Obs: O sorteio não aceita o nome de duas pessoas iguais.
+.
 
 - ## 👤 Autor
 
